@@ -101,6 +101,7 @@ public class MainPresenter extends BasePresenter<MainView> {
         binding.bottomNavigation.addButton("", R.drawable.ic_nav_search);
         binding.bottomNavigation.addButton("", R.drawable.ic_gif_tag);
         binding.bottomNavigation.addButton("", R.drawable.ic_nav_favourtie);
+        //binding.bottomNavigation.addButton("", R.drawable.ringtones);
         binding.bottomNavigation.showIconOnly();
         binding.bottomNavigation.setSelectedItem(-1);
         binding.bottomNavigation.setButtonClickListener(new NavigationClickListner() {
@@ -131,6 +132,10 @@ public class MainPresenter extends BasePresenter<MainView> {
                         binding.viewPager.setCurrentItem(4);
                         binding.toolbarTitle.setText("FAVOURITE WALLPAPER");
                         break;
+                  /*  case 4:
+                        binding.viewPager.setCurrentItem(5);
+                        binding.toolbarTitle.setText("RINGTONES");
+                        break;*/
                 }
                 exitCollapsed();
             }
@@ -238,7 +243,7 @@ public class MainPresenter extends BasePresenter<MainView> {
             @Override
             public void onClick(View v) {
                 slidingRootNav.closeMenu(true);
-                binding.viewPager.setCurrentItem(3);
+                binding.viewPager.setCurrentItem(5);
                 Toast.makeText(activity, "DFVGDGF", Toast.LENGTH_SHORT).show();
             }
         });

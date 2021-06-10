@@ -38,6 +38,6 @@ public class RingtonesFragment extends BaseFragment<RingtonesView, RingtonesPres
 
     @Override
     protected RingtonesPresenter initPresenter() {
-        return null;
+        return new RingtonesPresenter();
     }
 }
