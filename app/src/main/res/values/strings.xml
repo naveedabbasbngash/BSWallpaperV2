@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">4k Live Wallpapers</string>
+
+    <!-- PLAY DEVELOPER ID, HOW TO GET  : https://prnt.sc/qfpvzk -->
+    <string name="play_developer_id">https://play.google.com/store/apps/developer?id=5428398549902206966</string>
+
+    <!-- DOWNLOAD FOLDER -->
+    <string name="download_folder">BENKKBENKK</string>
+
+    <!--DRAWER MENU-->
+    <string name="drawer_home">Home</string>
+    <string name="drawer_latest">Latest</string>
+    <string name="drawer_ringtone">Ringtones</string>
+    <string name="drawer_category">Category</string>
+    <string name="drawer_favourite">Favourite</string>
+    <string name="drawer_share">Share App</string>
+    <string name="drawer_rate">Rate App</string>
+    <string name="drawer_more">More App</string>
+    <string name="drawer_privacy">Privacy Police</string>
+
+    <!-- OTHERS -->
+    <string name="get_more_wall">Get more amazing wallpapers, download now</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

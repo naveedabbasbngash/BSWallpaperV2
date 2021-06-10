@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "377620424759",
+    "firebase_url": "https://live-wallapapers-huawei.firebaseio.com",
+    "project_id": "live-wallapapers-huawei",
+    "storage_bucket": "live-wallapapers-huawei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377620424759:android:610a72a30b44d4840837b2",
+        "android_client_info": {
+          "package_name": "com.livewallpapers.huawei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377620424759-5u9pg59j00up24787i5cqu0gvjmccim0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.livewallpapers.huawei",
+            "certificate_hash": "fffddbbe549fb90a91eb2d5504622a6f78608cb5"
+          }
+        },
+        {
+          "client_id": "377620424759-5fibfds8fcg978ujbhv24pbgk0b634ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJKdwETiB86svS39OhSxojyTLRhZgSb1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377620424759-5fibfds8fcg978ujbhv24pbgk0b634ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377620424759:android:b3600d619fd0f04b0837b2",
+        "android_client_info": {
+          "package_name": "live.wallapapers.huawei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377620424759-5fibfds8fcg978ujbhv24pbgk0b634ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJKdwETiB86svS39OhSxojyTLRhZgSb1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377620424759-5fibfds8fcg978ujbhv24pbgk0b634ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

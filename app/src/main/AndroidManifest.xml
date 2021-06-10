@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.livewallpapers.huawei">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <uses-feature
+        android:name="android.software.live_wallpaper"
+        android:required="true" />
+
+    <application
+        android:name="com.livewallpapers.huawei.App"
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/BStudioThemeLight"
+        tools:ignore="GoogleAppIndexingWarning">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity android:name="com.livewallpapers.huawei.ui.zoom.ZoomActivity"/>
+        <activity android:name="com.livewallpapers.huawei.ui.detail.DetailActivity"/>
+        <activity android:name="com.livewallpapers.huawei.ui.bycategory.ByCategoryActivity"/>
+        <activity android:name="com.livewallpapers.huawei.ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.livewallpapers.huawei.ui.main.MainActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <service
+            android:name="com.livewallpapers.huawei.data.services.GifWallpaperService"
+            android:label="BENKKSTUDIO GIF WALLPAPER"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:showOnLockScreen="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper" />
+        </service>
+    </application>
+
+</manifest>
