@@ -22,7 +22,8 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
 
     @Override
     protected void beforeOnCreate() {
-        if (SharedPref.getSharedPref(this).contains(MainPresenter.THEME_MODE) && SharedPref.getSharedPref(this).readBoolean(MainPresenter.THEME_MODE)) {
+        if (SharedPref.getSharedPref(this).contains(MainPresenter.THEME_MODE) &&
+                SharedPref.getSharedPref(this).readBoolean(MainPresenter.THEME_MODE)) {
             setTheme(R.style.BStudioThemeDark);
         } else {
             setTheme(R.style.BStudioThemeLight);

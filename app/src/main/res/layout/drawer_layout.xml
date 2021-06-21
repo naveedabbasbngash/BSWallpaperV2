@@ -20,7 +20,7 @@
         android:layout_height="180dp"
         android:scaleType="fitXY"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/waves_header"
+        android:src="@drawable/wallpaper_banner"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

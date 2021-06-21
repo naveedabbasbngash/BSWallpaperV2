@@ -193,10 +193,12 @@ public class MainPresenter extends BasePresenter<MainView> {
                 if (SharedPref.getSharedPref(activity).contains(THEME_MODE)) {
                     if(!SharedPref.getSharedPref(activity).readBoolean(THEME_MODE)){
                         SharedPref.getSharedPref(activity).write(THEME_MODE, true);
-                        binding.themeMode.setImageDrawable(activity.getResources().getDrawable(R.drawable.ic_dark_mode));
+                        binding.themeMode.setImageDrawable(activity.getResources()
+                                .getDrawable(R.drawable.ic_dark_mode));
                     } else {
                         SharedPref.getSharedPref(activity).write(THEME_MODE, false);
-                        binding.themeMode.setImageDrawable(activity.getResources().getDrawable(R.drawable.ic_light_mode));
+                        binding.themeMode.setImageDrawable(activity.getResources()
+                                .getDrawable(R.drawable.ic_light_mode));
                     }
                 } else {
                     SharedPref.getSharedPref(activity).write(THEME_MODE, true);
